@@ -1,0 +1,285 @@
+/* ---------------------------General Rules----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f1f3f4;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* ------------------top nav bar-------------------------- */
+.top-nav-bar {
+  height: 57px;
+  top: 0;
+  position: sticky;
+  background: #fff;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #D6DAE8;
+  z-index: 2;
+}
+
+#menu-btn,
+#close-btn {
+  font-size: 30px;
+  margin: 10px;
+  color: #E37823;
+  display: none;
+}
+
+.logo {
+  height: 40px;
+  margin: 5px 10px;
+}
+
+.form-control {
+  margin-top: 9px;
+  margin-left: 30px;
+  border: 1px solid #D6DAE8 !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.search-icon {
+  background-color: #E37823 !important;
+  border: 1px solid #D6DAE8 !important;
+  margin: 8.5px 10px 3px 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  cursor: pointer;
+  width: 45px;
+
+}
+
+.search-box {
+  display: inline-flex;
+  width: 60%;
+}
+
+.fa-search {
+  color: #fff;
+  padding: 10px 5px;
+}
+
+.menu-links {
+  width: 40%;
+  height: 57px;
+  float: right;
+}
+
+.menu-links ul {
+  display: inline-flex;
+  float: right;
+}
+
+.menu-links ul li {
+  border-left: 1px solid #fff;
+  list-style: none;
+  padding: 15px 35px;
+  text-align: center;
+  background-color: #D6DAE8;
+  cursor: pointer;
+}
+
+.menu-links ul li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #283785;
+  text-decoration: none;
+}
+
+.fa-cart-arrow-down {
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+
+/* --------------------slider section---------------------------- */
+.slider {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: red;
+  margin-top: -20px;
+}
+
+.container {
+
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  background-color: green;
+
+}
+
+.side-menu {
+  height: 100%;
+  width: 250px;
+  font-size: 14px;
+  float: left;
+  z-index: 2;
+  background-color: #D6DAE8;
+  clear: both;
+}
+
+
+
+
+.side-menu ul {
+  margin-left: 10px;
+  width: 100%;
+}
+
+
+.side-menu ul li {
+  list-style: none;
+  font-weight: 700;
+  margin-top: 10px;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.side-menu ul li:hover {
+  color: #E37823;
+  text-decoration: none;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+
+
+}
+
+
+#menu-btn {
+  display: block;
+}
+
+.sub-menus {
+  display: none;
+  z-index: 10;
+  top: 77px;
+  margin-top: -20px;
+  margin-left: 240px !important;
+  width: 800px;
+  height: 65% !important;
+  background-color: #fff !important;
+  cursor: default;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+
+}
+
+.side-menu ul li:hover .sub-menus {
+  display: block;
+  height: 400px;
+  margin-left: 14%;
+  padding: 0 100px 10px 10px;
+  position: fixed;
+  background-color: #D6DAE8;
+}
+
+.sub-inner-categories {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.sub-inner-categories h2 {
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  color: #000 !important;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------media queries------------------------------- */
+
+
+@media only screen and (max-width:980px) {
+  .top-nav-bar {
+    height: 118px;
+    border-bottom: 0;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .menu-links {
+    width: 100%;
+  }
+
+  .menu-links ul {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .menu-links ul li {
+    height: 57px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:980px) {
+
+  .side-menu {
+    width: 34%;
+    font-size: 12px;
+    z-index: 20;
+    background-color: #D6DAE8;
+    position: fixed;
+    margin-left: 0;
+  }
+
+
+
+  .sub-menus {
+
+    z-index: 10;
+    top: 77px;
+    margin-top: -20px;
+    width: 100%;
+    height: 65% !important;
+    background-color: #fff !important;
+    cursor: default;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+  }
+
+}
