@@ -119,18 +119,46 @@ section {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: red;
+
   margin-top: -20px;
 }
 
-.container {
+.top-slip {
+  height: 40px;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: grey;
+
+}
+
+.top-slip-left {
+  height: 100%;
+  width: 250px;
+  padding: 5px;
+  background-color: #FAE8DA;
+}
+
+.show-all {
+  font-size: 15px;
+}
+
+.show-all:hover {
+  cursor: pointer;
+
+}
+
+.fa-angle-right {
+  margin-left: 5px;
+}
+
+.side-menu-container {
 
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  background-color: green;
+
 
 }
 
@@ -179,8 +207,8 @@ section {
 .sub-menus {
   display: none;
   z-index: 10;
-  top: 77px;
-  margin-top: -20px;
+  top: 92px;
+
   margin-left: 240px !important;
   width: 800px;
   height: 65% !important;
@@ -190,7 +218,7 @@ section {
   border-bottom: 1px solid #ccc;
   transition: all .3s;
   -webkit-transition: all .3s;
-
+  background-color: blue !important;
 }
 
 .side-menu ul li:hover .sub-menus {
@@ -204,8 +232,7 @@ section {
 
 .sub-inner-categories {
   display: inline-block;
-  width: 200px;
-  height: 200px;
+
   margin: 10px;
 }
 
@@ -229,8 +256,11 @@ section {
 
 /* ------------------media queries------------------------------- */
 
+@media all and (max-width: 1690px) {}
 
-@media only screen and (max-width:980px) {
+@media all and (max-width: 1280px) {}
+
+@media all and (max-width: 980px) {
   .top-nav-bar {
     height: 118px;
     border-bottom: 0;
@@ -253,12 +283,18 @@ section {
     height: 57px;
     width: 100%;
   }
-}
 
-@media only screen and (max-width:980px) {
+  .top-slip-left {
+
+    width: 200px;
+
+  }
+
 
   .side-menu {
-    width: 34%;
+    display: none;
+    width: 200px;
+    height: 60%;
     font-size: 12px;
     z-index: 20;
     background-color: #D6DAE8;
@@ -266,20 +302,59 @@ section {
     margin-left: 0;
   }
 
-
+  .top-slip:hover .side-menu {
+    display: block !important;
+  }
 
   .sub-menus {
 
     z-index: 10;
-    top: 77px;
+    top: 138px;
     margin-top: -20px;
     width: 100%;
     height: 65% !important;
-    background-color: #fff !important;
+    background-color: blue !important;
     cursor: default;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    margin-left: 180px !important;
 
   }
 
+}
+
+@media all and (max-width: 736px) {
+
+  .sub-menus {
+
+    z-index: 10;
+    top: 138px;
+    margin-top: -20px;
+    width: 100%;
+    height: 65% !important;
+    background-color: blue !important;
+    cursor: default;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-left: 180px !important;
+
+  }
+}
+
+@media all and (max-width: 480px) {
+
+  .sub-menus {
+
+    z-index: 10;
+    top: 138px;
+    margin-top: -20px;
+    width: 100%;
+    height: 65% !important;
+    background-color: blue !important;
+    cursor: default;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-left: 180px !important;
+
+  }
 }
