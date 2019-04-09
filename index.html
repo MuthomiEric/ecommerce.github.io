@@ -21,8 +21,8 @@
   <div class="top-nav-bar clearfix">
 
     <div class="search-box">
-      <i class="fas fa-bars" id="menu-btn" onclick="openMenu()"></i>
-      <i class="fas fa-times" id="close-btn" onclick="closeMenu()"></i>
+      <!-- <i class="fas fa-bars" id="menu-btn" onclick="openMenu()"></i>
+      <i class="fas fa-times" id="close-btn" onclick="closeMenu()"></i> -->
       <a href="#"><img src="./images/logo.PNG" class="logo" alt="logo" /></a>
 
       <input type="text" class="form-control" />
@@ -41,15 +41,16 @@
   </div>
 
   <section class="slider">
-    <div class="top-slip">
-      <div class="top-slip-left">
-        <p>CATEGORIES <span class="show-all">Show All<i class="fas fa-angle-right"></i> </span> </p>
-      </div>
-      <div class="top-slip-right"></div>
-    </div>
+    
     <div class="side-menu-container clearfix">
+        <div class="top-slip">
+            <div class="top-slip-left">
+              
+            </div>
+            <div class="top-slip-right"></div>
+          </div>
       <div class="side-menu clearfix" id="side-menu">
-
+          <p>CATEGORIES <span class="show-all">Show All<i class="fas fa-angle-right"></i> </span> </p>
         <ul>
           <li>
             Bags &amp; Shoes
@@ -1067,7 +1068,7 @@
 
 
 
-  <script>
+  <!-- <script>
     function openMenu() {
       document.getElementById("side-menu").style.display = "block";
       document.getElementById("menu-btn").style.display = "none";
@@ -1079,7 +1080,7 @@
       document.getElementById("menu-btn").style.display = "block";
       document.getElementById("close-btn").style.display = "none";
     }
-  </script>
+  </script> -->
 </body>
 
 </html>

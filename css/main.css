@@ -200,9 +200,9 @@ section {
 }
 
 
-#menu-btn {
+/* #menu-btn {
   display: block;
-}
+} */
 
 .sub-menus {
   display: none;
@@ -291,7 +291,7 @@ section {
   }
 
 
-  .side-menu {
+  .side-menu ul {
     display: none;
     width: 200px;
     height: 60%;
@@ -302,9 +302,11 @@ section {
     margin-left: 0;
   }
 
-  .top-slip:hover .side-menu {
-    display: block !important;
+  .side-menu p:hover .side-menu ul {
+    display: block;
   }
+
+
 
   .sub-menus {
 
